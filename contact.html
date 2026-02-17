@@ -11,17 +11,33 @@
 
     
     
-    <header>
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="event.html">Event</a></li>
-        <li><a href="contact.html">Hitta oss</a></li>
+   <header>
+          <nav class="navbar">
+        <ul class="nav-left">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="booking.html">Bokning</a></li>
+        </ul>
+
+        <img id="top_main_logotype" src="assets/logotyp_klassons_slaktbar.png" alt="Klassons Slaktbar Logotyp">
+
+        <!-- <a href="index.html"><img id="top_main_logotype" src="assets/logotyp_klassons_slaktbar.png" alt="Klassons Slaktbar Logotyp"></a> -->
+
+        <ul class="nav-right">
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Hitta oss</a></li>
+        </ul>
+        </nav>
     </header>
 
-<img id="karta" src="image/Skarmavbild karta.png" alt="">
+<main class="booking-container">
+
+
+<div class="main_section">
+    <img id="karta" src="image/Skarmavbild karta.png" alt="en karta över slaktbaren">
 <p>📍 Adress: Slakthuset 23, Stockholm</p>
 <p>📞 Telefon: 08-123 89 67</p>
 <p>📧 Email: info@slaktbaren.se</p>
+</div>
 
 <header>
           <nav class="navbar">
@@ -42,12 +58,9 @@
     </header>
 
 
-
-
-
-<h1>Lämna dina synpunkter</h1>
-
-<form>
+<section>
+<form class="booking-card" id="coworking">
+    <h2>Lämna dina synpunkter</h2>
     <label for="name">Namn:</label><br>
     <input type="text" id="name" name="name" placeholder="Ditt namn"><br><br>
 
@@ -70,6 +83,10 @@
 
     <button type="submit">Skicka</button>
 </form>
+</section>
+
+
+</main>
 
     
     <footer class="footer">
