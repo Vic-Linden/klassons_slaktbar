@@ -119,19 +119,20 @@ header {
 
 #karta {
     display: block;
-    margin: 20px auto;
-    width: 100%;
+    margin: 10px auto;
+    width: 50%;
     height: auto;
     image-rendering: pixelated;
     border: #0F4D2C10 solid 2px;
 }
 
+
+
+
+
     
     
 
-
-    -webkit-text-stroke: 0.5px black;
-}
 
 #page_divider {
     background-color: #0F4D2C;
