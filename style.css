@@ -23,16 +23,16 @@ header {
     justify-content: center;
     background-color: #0F4D2C;
     height: 4cm;
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 10;
 }
 
 #top_main_logotype {
-     height: 250px;
+    height: 250px;
     width: auto;
     align-self: center; 
-    margin-top: 150px;   
+    margin-top: 120px;   
 }
 
 .main_section {
@@ -44,6 +44,7 @@ header {
 #main_background {
     width: 100%;
     display: block;
+    margin-top: 4cm;
 }
 
 #main_citat {
@@ -57,7 +58,6 @@ header {
     font-size: 4rem;
     font-family: "Sancreek", serif;
 }
-
 
 .navbar {
     display: flex;
@@ -171,6 +171,11 @@ header {
         font-size: 1rem;
     }
 
+    #main_background {
+        margin-top: 1.7cm;
+        margin-bottom: 0;
+    }
+
     #page_divider h3 { 
         font-size: 1rem; 
         text-align: center;
@@ -178,6 +183,7 @@ header {
     
     #page_divider {
         height: 1.75cm;
+        margin-top: 0;
     }
 
     .home {
