@@ -75,7 +75,7 @@ header {
     }
 }
 
-/* Grundläggande inställningar */
+/* BOOKING.html */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f1ea; /* En mjuk, ljusbeige ton */
@@ -83,7 +83,7 @@ body {
     line-height: 1.6;
 }
 
-/* Behållaren för båda korten */
+
 .booking-container {
     display: flex;
     flex-wrap: wrap;
@@ -92,7 +92,7 @@ body {
     padding: 20px;
 }
 
-/* Själva korten */
+
 .booking-card {
     background: #fff;
     border-radius: 8px;
@@ -100,12 +100,12 @@ body {
     padding: 25px;
     width: 100%;
     max-width: 450px;
-    border-top: 5px solid #1a472a; /* Skogsgrön (irländsk touch) */
+    border-top: 5px solid #1a472a; 
 }
 
-/* Specifik färg för sport-kortet */
+
 #sport {
-    border-top-color: #8b0000; /* Mörkröd (sport-energi) */
+    border-top-color: #8b0000; 
 }
 
 h2 {
@@ -117,7 +117,7 @@ h2 {
     color: #8b0000;
 }
 
-/* Formulär-styling */
+
 form {
     display: flex;
     flex-direction: column;
