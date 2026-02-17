@@ -218,7 +218,9 @@ header {
         top: 15%;
     }
 
-    #main_background {
+    #event_citat {
+        font-size: 1rem;
+        top: 17%;
     }
 
     #page_divider h3 { 
