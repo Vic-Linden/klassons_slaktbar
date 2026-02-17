@@ -23,29 +23,27 @@ header {
     justify-content: center;
     background-color: #0F4D2C;
     height: 4cm;
+    position: absolute;
     width: 100%;
-    position: relative;
     z-index: 10;
 }
 
 #top_main_logotype {
-    height: 250px;
+     height: 250px;
     width: auto;
-    position: relative;
-    z-index: 20;
+    align-self: center; 
+    margin-top: 150px;   
 }
 
 .main_section {
     position: relative;
     width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 #main_background {
     width: 100%;
     display: block;
-    position: relative;
-    z-index: 0;
 }
 
 #main_citat {
@@ -58,6 +56,44 @@ header {
     margin: 0;
     font-size: 4rem;
     font-family: "Sancreek", serif;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: flex-end;   /* flyttar knapparna ner mot botten av navbaren */
+    justify-content: space-between;
+    padding: 40px 60px;
+    height: 9rem;            /* gör navbaren högre om du vill ha mer luft */
+}
+
+/* ===== LISTOR VÄNSTER & HÖGER ===== */
+.nav-left,
+.nav-right {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    padding: 0;
+}
+
+/* ===== KNAPPAR ===== */
+.navbar a {
+    text-decoration: none;
+    background-color: #c29b3c;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 1rem;
+    border: 6px solid #4c5737;
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+/* ===== HOVER ===== */
+.navbar a:hover {
+    background-color: #0F4D2C;  
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     z-index: 1;
 
     -webkit-text-stroke: 0.5px black;
