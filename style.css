@@ -41,16 +41,10 @@ header {
     margin-top: 120px;   
 }
 
-.main_section {
-    position: relative;
-    width: 100%;
-    display: inline-block;
-}
-
 #main_background {
-    width: 100%;
     display: block;
-    margin-top: 4cm;
+    width: 100%;
+
 }
 
 #main_citat {
@@ -221,11 +215,10 @@ header {
 
     #main_citat {
         font-size: 1rem;
+        top: 15%;
     }
 
     #main_background {
-        margin-top: 70px;
-        margin-bottom: 0;
     }
 
     #page_divider h3 { 
