@@ -10,6 +10,12 @@ body, html {
 
 }
 
+.sancreek-regular {
+  font-family: "Sancreek", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .bungee-shade-regular {
   font-family: "Bungee Shade", sans-serif;
   font-weight: 400;
@@ -48,6 +54,18 @@ header {
 }
 
 #main_citat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 4rem;
+    font-family: "Sancreek", serif;
+}
+
+#event_citat {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -160,39 +178,11 @@ header {
 
 @media (max-width: 768px) {
     #top_main_logotype {
-        height: 80px;
-        margin-top: 0;
+        height: 100px;
     }
 
     header {
-        position: relative;
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 10px;
-        height: auto;
-        gap: 12px;
-        width: 100%;
-    }
-
-    .nav-left,
-    .nav-right {
-        gap: 0.8rem;
-    }
-
-    .navbar a {
-        padding: 8px 14px;
-        font-size: 0.85rem;
-        border: 4px solid #4c5737;
+        height: 1.7cm;
     }
 
     #main_citat {
@@ -200,7 +190,7 @@ header {
     }
 
     #main_background {
-        margin-top: auto;
+        margin-top: 1.7cm;
         margin-bottom: 0;
     }
 
@@ -292,7 +282,7 @@ input, select {
     font-size: 1rem;
 }
 
-/* knapparna för uteservering */
+/* Radio-knapparna för uteservering */
 .radio-group {
     margin-top: 10px;
     display: flex;
