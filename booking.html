@@ -4,19 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="event.html">Event</a></li>
-        <li><a href="contact.html">Hitta oss</a></li>
+        <nav>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="contact.html">Hitta oss</a></li>
+        </nav>
+        <a href="index.html"><img id="top_main_logotype" src="assets/logotyp_klassons_slaktbar.png" alt="Klassons Slaktbar Logotyp"></a>
     </header>
+
+    <main class="booking-container">
+
+        <div class="main_section">
+            <img id="main_background" src="assets/main_background.jpg" alt="">
+            <h2 id="main_citat">Välj mellan fokus under dagtid eller folkfest under matchtid</h2>
+        </div>
+
+        <div id="page_divider"></div>
+        
+        <section class="booking-card" id="coworking">
+            <h2>Distansarbete & Studier</h2>
+            <p>Boka en lugn plats mellan 09:00 - 17:00. Snabb Wi-Fi och fritt påfyll av kaffe ingår.</p>
+
+            <form action="/submit-booking" method="POST">
+                <input type="hidden" name="type" value="coworking">
+                
+                <label for="date-work">Datum:</label>
+                <input type="date" id="date-work" name="date" required>
+
+                <label for="time-work">Ankomsttid:</label>
+                <select id="time-work" name="time">
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="13:00">13:00</option>
+                </select>
+
+                <label for="guests-work">Antal personer:</label>
+                <input type="number" id="guests-work" name="guests" min="1" max="8" value="1">
+
+                <button type="submit" class="btn-work">Boka arbetsplats</button>
+            </form>
+        </section>
+
+
+        <section class="booking-card" id="sport">
+            <h2>Match & Sport</h2>
+            <p>Boka bord för din favoritmatch. Tack vare vår <strong>Multi-screen</strong> väljer du vad som visas!</p>
+            
+            <form action="/submit-booking" method="POST">
+                <input type="hidden" name="type" value="sport">
+
+                <label for="match-select">Vilken match vill du se?</label>
+                <select id="match-select" name="match" required>
+                    <option value="" disabled selected>Välj en sändning...</option>
+                    <optgroup label="Fotboll - Allsvenskan">
+                        <option value="dif-ham">Djurgården vs Hammarby (Sön 15:00)</option>
+                        <option value="aik-mff">AIK vs Malmö FF (Lör 18:00)</option>
+                    </optgroup>
+                    <optgroup label="Champions League">
+                        <option value="real-city">Real Madrid vs Man City (Tis 21:00)</option>
+                    </optgroup>
+                    <optgroup label="Övrigt">
+                        <option value="f1-monaco">F1: Monaco Grand Prix (Sön 15:00)</option>
+                    </optgroup>
+                </select>
+
+                <label for="guests-work">Antal personer:</label>
+                <input type="number" id="guests-work" name="guests" min="1" max="8" value="1">
+
+                <label>Placering:</label>
+                <div class="radio-group">
+                    <input type="radio" id="indoor" name="location" value="indoor" checked>
+                    <label for="indoor">Inne i baren</label>
+                    
+                    <input type="radio" id="outdoor" name="location" value="outdoor">
+                    <label for="outdoor">Uteserveringen (Sydvästläge)</label>
+                </div>
+
+                <button type="submit" class="btn-sport">Boka matchbord</button>
+            </form>
+        </section>
+
+    </main>
     
 
     <footer>
-        <p>&copy; 2026 SLAKTBAREN</p>
+        <p>&copy; 2026 SLAKTBAREN HOS JOHAN & MO</p>
     </footer>
 </body>
 </html>
