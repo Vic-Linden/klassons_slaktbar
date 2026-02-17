@@ -191,11 +191,32 @@ header {
 
 @media (max-width: 768px) {
     #top_main_logotype {
-        height: 100px;
+        height: 50px;
+        margin-top: 5px;
     }
     
     header {
-        height: 1.7cm;
+        height: 70px;
+        position: fixed;
+    }
+
+    .navbar {
+        padding: 5px 8px;
+        height: 70px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-left,
+    .nav-right {
+        gap: 0.3rem;
+    }
+
+    .navbar a {
+        padding: 5px 8px;
+        font-size: 0.65rem;
+        border: 2px solid #4c5737;
+        white-space: nowrap;
     }
 
     #main_citat {
@@ -203,7 +224,7 @@ header {
     }
 
     #main_background {
-        margin-top: 1.7cm;
+        margin-top: 70px;
         margin-bottom: 0;
     }
 
