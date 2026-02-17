@@ -60,3 +60,18 @@ header {
     font-family: "Sancreek", serif;
     z-index: 1;
 }
+
+/* ==== CONTACT PAGE ==== */
+
+#karta {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    border: #0F4D2C10 solid 2px;
+}
+
+    
+    
+
