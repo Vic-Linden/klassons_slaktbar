@@ -56,7 +56,21 @@ header {
     text-align: center;
     color: white;
     margin: 0;
-    font-size: 45px;
+    font-size: 4rem;
     font-family: "Sancreek", serif;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    #top_main_logotype {
+        height: 100px;
+    }
+
+    header {
+        height: 1.7cm;
+    }
+
+    #main_citat {
+        font-size: 1rem;
+    }
 }
