@@ -113,6 +113,22 @@ header {
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     z-index: 1;
+}
+
+/* ==== CONTACT PAGE ==== */
+
+#karta {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    border: #0F4D2C10 solid 2px;
+}
+
+    
+    
+
 
     -webkit-text-stroke: 0.5px black;
 }
