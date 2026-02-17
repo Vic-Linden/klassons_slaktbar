@@ -74,3 +74,105 @@ header {
         font-size: 1rem;
     }
 }
+
+/* Grundläggande inställningar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1ea; /* En mjuk, ljusbeige ton */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Behållaren för båda korten */
+.booking-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Själva korten */
+.booking-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 450px;
+    border-top: 5px solid #1a472a; /* Skogsgrön (irländsk touch) */
+}
+
+/* Specifik färg för sport-kortet */
+#sport {
+    border-top-color: #8b0000; /* Mörkröd (sport-energi) */
+}
+
+h2 {
+    margin-top: 0;
+    color: #1a472a;
+}
+
+#sport h2 {
+    color: #8b0000;
+}
+
+/* Formulär-styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Radio-knapparna för uteservering */
+.radio-group {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group input {
+    margin-top: 0;
+    width: auto;
+}
+
+/* Knappar */
+button {
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-work {
+    background-color: #1a472a;
+}
+
+.btn-work:hover {
+    background-color: #2d6a4f;
+}
+
+.btn-sport {
+    background-color: #8b0000;
+}
+
+.btn-sport:hover {
+    background-color: #a50000;
+}
