@@ -1,19 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Klassons Slaktbar</title>
+    <title>Klassons Sportbar - Irländsk Pub & Sport</title>
 </head>
-
-<header>
-
-</header>
-
 <body>
-    
-</body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="logo">KLASSONS<br><span>SPORTBAR</span></h1>
+            <p class="tagline">IRLÄNDSK PUB & SPORT I SLAKTHUSOMRÅDET</p>
+        </div>
+    </section>
 
+    <!-- Main Content Grid -->
+    <main class="content-grid">
+        <!-- Kommande Matcher Card -->
+        <div class="card">
+            <h2 class="card-title">KOMMANDE MATCHER</h2>
+            <div class="matches-list">
+                <div class="match-item">
+                    <span class="match-icon">⚽</span>
+                    <div class="match-details">
+                        <strong>Kommande Matcher ⚽</strong>
+                        <span>14.00 - 17.00</span>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="match-item">
+                    <span class="match-icon">⚽</span>
+                    <div class="match-details">
+                        <strong>Klassons Sportbar</strong>
+                        <span>22.00 - kväll</span>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="match-item">
+                    <span class="match-icon">⚽</span>
+                    <div class="match-details">
+                        <strong>Klassons Sportbar</strong>
+                        <span>18.00 - 23.00</span>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+                <div class="match-item">
+                    <span class="match-icon">⚽</span>
+                    <div class="match-details">
+                        <strong>Klassons Sportbar</strong>
+                    </div>
+                    <span class="arrow">→</span>
+                </div>
+            </div>
+            
+            <!-- Calendar -->
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button class="nav-btn" id="prevMonth">‹</button>
+                    <span id="currentMonth">Junri 2022</span>
+                    <button class="nav-btn" id="nextMonth">›</button>
+                </div>
+                <div class="calendar-grid">
+                    <div class="day-label">Sö</div>
+                    <div class="day-label">Må</div>
+                    <div class="day-label">Ti</div>
+                    <div class="day-label">On</div>
+                    <div class="day-label">To</div>
+                    <div class="day-label">Fr</div>
+                    <div class="day-label">Lö</div>
+                    
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day highlight">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day highlight">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Boka Bord Card -->
+        <div class="card image-card boka-bord">
+            <div class="card-overlay">
+                <h2 class="card-title">BOKA BORD</h2>
+            </div>
+        </div>
+
+        <!-- Meny & Dryck Card -->
+        <div class="card image-card meny-dryck">
+            <div class="card-overlay">
+                <h2 class="card-title">MENY & DRYCK</h2>
+                <div class="brand-logo">GUINNESS</div>
+            </div>
+        </div>
+
+        <!-- Coworking Space Card -->
+        <div class="card image-card coworking">
+            <div class="card-overlay">
+                <h2 class="card-title">COWORKING SPACE</h2>
+            </div>
+        </div>
+    </main>
+
+    <!-- Navigation Arrows -->
+    <button class="slide-arrow left-arrow" id="slideLeft">‹</button>
+    <button class="slide-arrow right-arrow" id="slideRight">›</button>
+</body>
 </html>
