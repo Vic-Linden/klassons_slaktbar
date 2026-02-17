@@ -10,16 +10,48 @@ body, html {
 
 }
 
+.sancreek-regular {
+  font-family: "Sancreek", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* ==== NAVBAR ==== */
 
 header {
     display: flex;
     justify-content: center;
-    background-color: #217A4A;
+    background-color: #0F4D2C;
     height: 4cm;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
 }
 
 #top_main_logotype {
     height: 250px;
     width: auto;
+}
+
+.main_section {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+#main_background {
+    width: 100%;
+    display: block;
+}
+
+#main_citat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 45px;
+    font-family: "Sancreek", serif;
 }
