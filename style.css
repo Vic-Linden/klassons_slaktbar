@@ -1,3 +1,25 @@
-h1{
-    color: red;
+/* ==== GLOBAL SETTINGS ==== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+
+}
+
+/* ==== NAVBAR ==== */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #217A4A;
+    height: 4cm;
+}
+
+#top_main_logotype {
+    height: 250px;
+    width: auto;
 }
